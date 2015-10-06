@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: http://newcas2016.ieee.ca/sitemap.xml
+
