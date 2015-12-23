@@ -1,0 +1,113 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Point : One Page Event and Conference HTML Template
+Version:	1.0
+Last change:	07/09/14 
+Assigned to:	TheWebLab
+Primary use:	Event 
+-------------------------------------------------------------------*/
+
+@import "reset.css";
+@import "layout.css";
+@import "font.css";
+@import "color.css";
+
+
+.dates, .topics-list {
+    margin-left: 4em;
+    margin-right: 2em;
+    margin-bottom: 0.5em;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+.topics h2 {
+    color: #555;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.topics h2 span {
+    color: #555;
+    font-weight: 300;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 2em;
+    font-size: 0.5em;
+}
+
+.topics-list {
+    color: black;
+    font-weight: 300;
+}
+
+.topics-list li {
+    line-height: 22px;
+}
+
+
+.dates span {
+    position: relative;
+    float: right;
+}
+
+h6.dates span {
+    width: 100%;
+    text-align: left;
+}
+
+.navbar-brand img {
+    width: 120px;
+    vertical-align: text-top;
+}
+
+.site_title img {
+    width: 300px;
+}
+
+.overlay_home p {
+    text-align: justify;
+    padding-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    font-weight: 300;
+    max-width: 700px;
+}
+
+.orglist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.orglist li {
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    color: black;
+    text-align: left;
+}
+
+.orglist li p {
+    padding-left: 2em;
+    font-weight: 300;
+    color: black;
+}
+
+.org-committee, .topics {
+	padding:30px 0;
+}
+
+.org-committee h2, .topics h2 {
+	text-transform:uppercase;
+}
+
+.copy {
+    font-weight: 300;
+    color: white;
+}
