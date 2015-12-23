@@ -14,6 +14,11 @@ Primary use:	Event
 @import "color.css";
 
 
+.single_partner img {
+    width: 200px;
+    height: 100px;
+}
+
 .dates, .topics-list {
     margin-left: 4em;
     margin-right: 2em;
@@ -99,11 +104,11 @@ h6.dates span {
     color: black;
 }
 
-.org-committee, .topics {
+.org-committee, .topics, .sponsors {
 	padding:30px 0;
 }
 
-.org-committee h2, .topics h2 {
+.org-committee h2, .topics h2, .sponsors h2 {
 	text-transform:uppercase;
 }
 
@@ -111,3 +116,8 @@ h6.dates span {
     font-weight: 300;
     color: white;
 }
+
+.single_partner {
+    width: 210px;
+}
+
