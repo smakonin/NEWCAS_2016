@@ -58,6 +58,22 @@ Primary use:	Event
     float: right;
 }
 
+.dates a {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.dates a:hover, .dates a:hover:active {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+    background: #F0652F;
+}
+
+
+
 h6.dates span {
     width: 100%;
     text-align: left;
