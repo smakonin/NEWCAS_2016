@@ -21,6 +21,20 @@
 			<script src="scripts/html5shiv.js"></script>
 			<script src="scripts/respond.min.js"></script>
 		<![endif]-->
+        
+        <script type="text/javascript">
+            function update_keynote_info(who)
+            {
+                document.getElementById("keynote0").style.display = 'none'
+                document.getElementById("keynote1").style.display = 'none'
+                document.getElementById("keynote2").style.display = 'none'
+                document.getElementById("keynote3").style.display = 'none'
+                
+                id = "keynote" + who
+                document.getElementById(id).style.display = 'block'
+            }
+        </script>
+        
 	</head>
 	<body>
 <!--    <div id="preloader"></div>    -->
@@ -78,6 +92,11 @@
 						<li>
 							<a href="#dates">
 								<p>Important Dates</p>
+							</a>
+						</li>
+						<li>
+							<a href="#keynotes">
+								<p>Keynote Speakers</p>
 							</a>
 						</li>
 						<li>
@@ -189,38 +208,93 @@
 			</section>
             
             <section>    
-				<div class="row partners col-md-12 middle text-center sponsors" id="sponsors">
+				<div class="row">
+					<div class="row partners col-md-6 text-center keynotes" id="keynotes">
+		                <h2 class="double">Keynotes</h2>
+						<div class="col-md-4">
+							<div class="keynote_pic">
+								<a onclick="update_keynote_info(1)"><img src="images/Behzad_Razavi.jpg" alt="Behzad Razavi"></a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="keynote_pic">
+								<a onclick="update_keynote_info(2)"><img src="images/Massimo_Alioto.jpg" alt="Massimo Alioto"></a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="keynote_pic">
+								<a onclick="update_keynote_info(3)"><img src="images/Ali_Niknejad.jpg" alt="Ali Niknejad"></a>
+							</div>
+						</div>
+                        
+                        <div class="col-md-12">
+                            <p id="keynote0" style="text-align:center;">
+                                <br/>
+                                <em>Click on a keynote's photo for details.</em>
+                            </p>
+                            <p id="keynote1" style="display:none;">
+                                <strong>Speaker:</strong> Professor Behzad Razavi, University of California, LA<br/>
+                                <strong>Title:</strong> Design for Low Power: The Next Frontier<br/>
+                                <br/>
+                                <strong>Abstract:</strong> Circuit and system design for low power consumption is not a new paradigm, but it has historically seen cyclic demands - from the electronic wristwatch in the 1970s to the mobile devices in the 1990s. Today's renewed interest in low-power design and green electronics derives from both the increasing number of users and the higher data rates that they require. This presentation highlights the urgency for low power in both wireless and wireline communications and describes various methods of power reduction at the circuit and architecture levels. Analog and digital techniques are explored that lead to nearly one order of magnitude reduction in power while allowing gigahertz speeds.<br/>
+                                <br/>
+                                View speaker's <a href="http://www.ee.ucla.edu/behzad-razavi/">profile website</a>.
+                            </p>
+                            <p id="keynote2" style="display:none;">
+                                <strong>Speaker:</strong> Professor Massimo Alioto, National University of Singapore<br/>
+                                <strong>Title:</strong> Designing (Relatively) Unreliable Systems with (Highly) Unreliable Components<br/>
+                                <br/>
+                                <strong>Abstract:</strong> Ten years after the new breed of ideas on how to design reliable systems with unreliable components, the design challenges posed by variations are harder than ever. To reduce the large energy cost of computational correctness due to variations, the VLSI community is now exploring ways to embrace imperfect computation, instead of over‐constraining circuits/systems to hide the natural imperfection of hardware. However, the field of “approximate computing” is still in its infancy, and most of the related work is highly fragmented and not really focused on the real challenges.
+                                In this talk, a vision on how mainstream processing platforms can incorporate error‐tolerant computation will be presented. In particular, we will introduce a unitary framework for systems that dynamically trade off energy and quality of computation, depending on the application and the user’s requirements. Fresh concepts to preserve the economy of scale offered by todays’ design approaches will be discussed, along with ways to incorporate dynamic energy‐quality management in general‐purpose systems, designed with existing EDA tools, and programmed with existing software programming models (or so). Variation‐aware circuit techniques and design strategies will be discussed to enable dynamic and wide energy‐quality adjustment in sub‐32nm technologies, from error‐tolerant to error‐free. Appropriate abstractions, architectures and control schemes will be discussed to propagate such capability at all levels.<br/>
+                                <br/>
+                                View speaker's <a href="http://www.green-ic.org/prof-massimo-alioto">profile website</a>.
+                            </p>
+                            <p id="keynote3" style="display:none;">
+                                <strong>Speaker:</strong> Professor Ali Niknejad, University of California, Berkeley<br/>
+                                <strong>Title:</strong> mm-Wave CMOS to the Rescue:  5G and Beyond (xG) Communication and Enhanced BioSensing<br/>
+                                <br/>
+                                <strong>Abstract:</strong> Today’s commercial CMOS technology allows circuits to operate to 100’s of GHz, opening up new applications that have the potential to revolutionize communications, imaging, sensing, and signal processing.  In this talk we will highlight three technology demonstrations in 65nm CMOS that demonstrate the potential for mobile communication in the mm-wave band for long range base-station to mobile and back-haul, short range communication at 16 Gbps with a carrier frequency of 240 GHz, and a new interferometry-based dielectric flow cytometer “lab on a chip” platform for detecting the dielectric constant of cells up to 30 GHz with high accuracy.  Important circuit and system optimization techniques will be highlighted in achieving these prototypes.<br/>
+                                <br/>
+                                View speaker's <a href="http://www.eecs.berkeley.edu/Faculty/Homepages/niknejad.html">profile website</a>.
+                            </p>                            
+                        </div>
+	                </div>
+
+					<div class="row partners col-md-6 middle text-center sponsors" id="sponsors">
                         <h2 class="double">Sponsors</h2>
-                        <div class="col-md-3 col-sm-3">
+                        <div class="col-md-6">
                             <div class="single_partner">
                                 <a href="http://www.ieee.org"><img src="images/ieee.png" alt="IEEE"></a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3">
+                        <div class="col-md-6">
                             <div class="single_partner">
                                 <a href="http://ieee-cas.org"><img src="images/ieee-cas.png" alt="IEEE CAS"></a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3">
+                        
+                        <div class="col-md-6">
                             <div class="single_partner">
                                 <a href="http://www.resmiq.org"><img src="images/resmiq.png" alt="img"></a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3">
+                        <div class="col-md-6">
                             <div class="single_partner">
                                 <a href="http://vancouver.ieee.ca"><img src="images/ieee-van.png" alt="IEEE Vancouver"></a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3">
+                        
+                        <div class="col-md-6">
                             <div class="single_partner">
                                 <a href="http://www.consulfrance-vancouver.org"><img src="images/cgfv.png" alt="Consulate General of France in Vancouver"></a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3">
+                        <div class="col-md-6">
                             <div class="single_partner">
                                 <a href="https://www.ece.ubc.ca"><img src="images/ubc-ece.png" alt="UBC ECE"></a>
                             </div>
                         </div>
+					</div>
 				</div>
             </section>
                 

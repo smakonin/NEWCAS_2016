@@ -120,7 +120,7 @@ h6.dates span {
     color: black;
 }
 
-.org-committee, .topics, .sponsors {
+.org-committee, .topics, .sponsors, .keynotes {
 	padding:30px 0;
 }
 
@@ -137,3 +137,26 @@ h6.dates span {
     width: 210px;
 }
 
+.keynote_pic img {
+    width: 150px;
+}
+
+.keynotes h2{
+	text-transform:uppercase;
+}
+
+.keynotes div p {
+    font-family: "helvetica neue", helvetica, sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    height: auto;
+}
+
+.keynotes div p a {
+    color: firebrick;
+    text-decoration: underline;
+}
+
+.sponsors {
+    height: auto;
+}
