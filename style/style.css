@@ -43,6 +43,16 @@ Primary use:	Event
     font-size: 0.5em;
 }
 
+
+#hotel h2 span a {
+    color: rgb(42, 100, 150);
+    font-weight: 300;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 2em;
+    font-size: 0.5em;
+}
+
 .topics-list {
     color: black;
     font-weight: 300;
